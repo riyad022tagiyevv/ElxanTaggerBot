@@ -36,7 +36,7 @@ async def start(event):
                    )
 @client.on(events.NewMessage(pattern="^/help$"))
 async def help(event):
-  helptext = "**Turbo Tagger Bot'un Kömək Menyusu**\n\nƏmrlər:\n/tag - 5-li Tag Edəcəkdir. \n/admins - Yalnız Adminləri Tag Edəcəkdir. \n/tektag - Tək-tək Tag Edəcəkdir.\n/etag - Emojilərlə Tag Edəcəkdir."
+  helptext = "**Elxam Tagger Bot'un Kömək Menyusu**\n\nƏmrlər:\n/tag - 5-li Tag Edəcəkdir. \n/admins - Yalnız Adminləri Tag Edəcəkdir. \n/tektag - Tək-tək Tag Edəcəkdir.\n/etag - Emojilərlə Tag Edəcəkdir."
   await event.reply(helptext,
                     buttons=(
                       [Button.url('Məni Qrupa Sal ➕', 'https://t.me/ElxanTaggerBot?startgroup=a')],
@@ -49,7 +49,7 @@ async def help(event):
 	
 @client.on(events.NewMessage(pattern="^/reklam$"))
 async def help(event):
-  helptext = "**Çox funksiyalı tag botunu tapmağa çalışan qrup sahibləri @ElxanTaggerBot Sizin üçündür:\n\n📌 5-li Tag\n📌 Emojiylə Tag\n📌 Təkli Tag\n📌 Yalnız Adminləri Taglamaq\n📌\n\n Belə bir çox funksiyalı @OldTaggerBot-u admin olaraq qrupunuza əlavə edə və asanlıqla qoşula, userleri tag edə bilərsiniz. **"
+  helptext = "**Çox funksiyalı tag botunu tapmağa çalışan qrup sahibləri @ElxanTaggerBot Sizin üçündür:\n\n📌 5-li Tag\n📌 Emojiylə Tag\n📌 Təkli Tag\n📌 Yalnız Adminləri Taglamaq\n📌\n\n Belə bir çox funksiyalı @ElxanTaggerBot-u admin olaraq qrupunuza əlavə edə və asanlıqla qoşula, userleri tag edə bilərsiniz. **"
   await event.reply(helptext,
                     buttons=(
                       [Button.url('Məni Qrupa Sal ➕', 'https://t.me/ElxamTaggerBot?startgroup=a')],
