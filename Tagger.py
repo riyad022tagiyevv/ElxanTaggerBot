@@ -167,7 +167,7 @@ async def mentionall(event):
       usrnum += 1
       usrtxt += f"👤 [{usr.first_name}](tg://user?id={usr.id}) \n"
       if event.chat_id not in anlik_calisan:
-        await event.respond("Tag uğurlu şəkildə dayandırıldı\n\n**Burada sizin reklamınız ola bilər @muellime**❌")
+        await event.respond("**Tag uğurlu şəkildə dayandırıldı** ❌")
         return
       if usrnum == 5:
         await client.send_message(event.chat_id, f"{usrtxt}\n{msg}")
@@ -185,7 +185,7 @@ async def mentionall(event):
       usrnum += 1
       usrtxt += f"👤 [{usr.first_name}](tg://user?id={usr.id}) \n"
       if event.chat_id not in anlik_calisan:
-        await event.respond("Tag uğurlu şəkildə dayandırıldı❌")
+        await event.respond("**Tag uğurlu şəkildə dayandırıldı** ❌")
         return
       if usrnum == 5:
         await client.send_message(event.chat_id, usrtxt, reply_to=msg)
@@ -232,7 +232,7 @@ async def mentionall(event):
       usrnum += 1
       usrtxt += f"**👤 [{usr.first_name}](tg://user?id={usr.id}) \n**"
       if event.chat_id not in tekli_calisan:
-        await event.respond("**Tag uğurlu şəkildə dayandırıldı❌**")
+        await event.respond("**Tag uğurlu şəkildə dayandırıldı** ❌")
         return
       if usrnum == 1:
         await client.send_message(event.chat_id, f"{usrtxt} {msg}")
@@ -250,7 +250,7 @@ async def mentionall(event):
       usrnum += 1
       usrtxt += f"👤 [{usr.first_name}](tg://user?id={usr.id}) \n"
       if event.chat_id not in tekli_calisan:
-        await event.respond("**Tag uğurlu şəkildə dayandırıldı❌**")
+        await event.respond("**Tag uğurlu şəkildə dayandırıldı** ❌")
         return
       if usrnum == 1:
         await client.send_message(event.chat_id, usrtxt, reply_to=msg)
