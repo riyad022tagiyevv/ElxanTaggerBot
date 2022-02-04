@@ -49,7 +49,7 @@ async def help(event):
 	
 @client.on(events.NewMessage(pattern="^/reklam$"))
 async def help(event):
-  helptext = "**Çox funksiyalı tag botunu tapmağa çalışan qrup sahibləri @ElxanTaggerBot Sizin üçündür:\n\n📌 5-li Tag\n📌 Emojiylə Tag\n📌 Təkli Tag\n📌 Yalnız Adminləri Taglamaq\n📌\n\n Belə bir çox funksiyalı @ElxanTaggerBot-u admin olaraq qrupunuza əlavə edə və asanlıqla qoşula, userleri tag edə bilərsiniz. **"
+  helptext = "**Çox funksiyalı tag botunu tapmağa çalışan qrup sahibləri @ElxanTaggerBot Sizin üçündür:\n\n📌 5-li Tag\n📌 Emojiylə Tag\n📌 Təkli Tag\n📌 Yalnız Adminləri Taglamaq\n\n Belə bir çox funksiyalı @ElxanTaggerBot-u admin olaraq qrupunuza əlavə edə və asanlıqla qoşula, userleri tag edə bilərsiniz. **"
   await event.reply(helptext,
                     buttons=(
                       [Button.url('Məni Qrupa Sal ➕', 'https://t.me/ElxanTaggerBot?startgroup=a')],
