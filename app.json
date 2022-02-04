@@ -1,7 +1,7 @@
 {
-  "name": "Turbo Tagger Bot",
-  "logo":"https://telegra.ph/file/133b9125da464d1db6fca.jpg",
-  "description": "Turbo Tagger Bot qrupunuzdakı bütün userleri tag edə bilər.",
+  "name": "Elxan Tagger Bot",
+  "logo":"https://telegra.ph/file/6c8bc4dd2d2e8412246a6.jpg",
+  "description": "Elxan Tagger Bot qrupunuzdakı bütün userleri tag edə bilər.",
   "env": {
     "TOKEN": {
       "description": "@botfather Vasitəsi ilə Ala Bilərsən",
