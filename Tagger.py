@@ -165,7 +165,7 @@ async def mentionall(event):
     usrtxt = ""
     async for usr in client.iter_participants(event.chat_id):
       usrnum += 1
-      usrtxt += f"👥 - [{usr.first_name}](tg://user?id={usr.id}) \n"
+      usrtxt += f"👤 [{usr.first_name}](tg://user?id={usr.id}) \n"
       if event.chat_id not in anlik_calisan:
         await event.respond("Tag uğurlu şəkildə dayandırıldı\n\n**Burada sizin reklamınız ola bilər @muellime**❌")
         return
@@ -183,7 +183,7 @@ async def mentionall(event):
     usrtxt = ""
     async for usr in client.iter_participants(event.chat_id):
       usrnum += 1
-      usrtxt += f"👥 - [{usr.first_name}](tg://user?id={usr.id}) \n"
+      usrtxt += f"👤 [{usr.first_name}](tg://user?id={usr.id}) \n"
       if event.chat_id not in anlik_calisan:
         await event.respond("Tag uğurlu şəkildə dayandırıldı❌")
         return
@@ -230,7 +230,7 @@ async def mentionall(event):
     usrtxt = ""
     async for usr in client.iter_participants(event.chat_id):
       usrnum += 1
-      usrtxt += f"**👤 - [{usr.first_name}](tg://user?id={usr.id}) \n**"
+      usrtxt += f"**👤 [{usr.first_name}](tg://user?id={usr.id}) \n**"
       if event.chat_id not in tekli_calisan:
         await event.respond("Tag uğurlu şəkildə dayandırıldı\n\n**Burada sizin reklamınız ola bilər @muellime**❌")
         return
@@ -248,7 +248,7 @@ async def mentionall(event):
     usrtxt = ""
     async for usr in client.iter_participants(event.chat_id):
       usrnum += 1
-      usrtxt += f"👤 - [{usr.first_name}](tg://user?id={usr.id}) \n"
+      usrtxt += f"👤 [{usr.first_name}](tg://user?id={usr.id}) \n"
       if event.chat_id not in tekli_calisan:
         await event.respond("**Tag uğurlu şəkildə dayandırıldı\n\n**Burada sizin reklamınız ola bilər @muellime**❌")
         return
@@ -284,5 +284,5 @@ async def mentionall(tagadmin):
 		sleep(0.5)
 
 
-print(">> Bot işləyir narahat olma 🚀 @muellime məlumat ala bilərsiniz <<")
+print(">> Bot işləyir narahat olma 🚀 məlumat almaq üçün @muellime yazın <<")
 client.run_until_disconnected()
