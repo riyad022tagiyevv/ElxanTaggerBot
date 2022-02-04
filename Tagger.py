@@ -36,7 +36,7 @@ async def start(event):
                    )
 @client.on(events.NewMessage(pattern="^/help$"))
 async def help(event):
-  helptext = "**Elxam Tagger Bot'un Kömək Menyusu**\n\nƏmrlər:\n/tag - 5-li Tag Edəcəkdir. \n/admins - Yalnız Adminləri Tag Edəcəkdir. \n/tektag - Tək-tək Tag Edəcəkdir.\n/etag - Emojilərlə Tag Edəcəkdir."
+  helptext = "**Elxan Tagger Bot'un Kömək Menyusu**\n\nƏmrlər:\n/tag - 5-li Tag Edəcəkdir. \n/admins - Yalnız Adminləri Tag Edəcəkdir. \n/tektag - Tək-tək Tag Edəcəkdir.\n/etag - Emojilərlə Tag Edəcəkdir."
   await event.reply(helptext,
                     buttons=(
                       [Button.url('Məni Qrupa Sal ➕', 'https://t.me/ElxanTaggerBot?startgroup=a')],
