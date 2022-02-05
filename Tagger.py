@@ -268,20 +268,20 @@ async def cancel(event):
 @client.on(events.NewMessage(pattern="^/tagadmin ?(.*)"))
 async def mentionall(tagadmin):
 
- if tagadmin.pattern_match.group(1):
-  seasons = tagadmin.pattern_match.group(1)
- else:
-  seasons = ""
+        if tagadmin.pattern_match.group(1):
+               seasons = tagadmin.pattern_match.group(1)
+        else:
+               seasons = ""
 
- chat = await tagadmin.get_input_chat()
- a_=0
- await tagadmin.delete()
- async for i in client.iter_participants(chat, filter=cp):
-  if a_ == 500:
-   break
-  a_+=5
-  await tagadmin.client.send_message(tagadmin.chat_id, "{} {}".format(i.first_name, i.id, seasons))
-  sleep(0.5)
+        chat = await tagadmin.get_input_chat()
+        a_=0
+        await tagadmin.delete()
+        async for i in client.iter_participants(chat, filter=cp):
+                if a_ == 500:
+                        break
+                a_+=5
+                await tagadmin.client.send_message(tagadmin.chat_id, "{} {}".format(i.first_name, i.id, seasons))
+                sleep(0.5)
 
 
 print(">> Bot işləyir narahat olma 🚀 məlumat almaq üçün @muellime yazın <<")
