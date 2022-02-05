@@ -36,7 +36,7 @@ async def start(event):
                    )
 @client.on(events.NewMessage(pattern="^/help$"))
 async def help(event):
-  helptext = "**Elxan Tagger Bot'un Kömək Menyusu**\n\nƏmrlər:\n/tag - 5-li Tag Edəcəkdir. \n/admins - Yalnız Adminləri Tag Edəcəkdir. \n/tektag - Tək-tək Tag Edəcəkdir.\n/etag - Emojilərlə Tag Edəcəkdir."
+  helptext = "**Elxan Tagger Bot'un Kömək Menyusu**\n\nƏmrlər:\n/all <səbəb> - 5-li Tag Edəcəkdir. \n/admins <səbəb> - Yalnız Adminləri Tag Edəcəkdir. \n/tektag <səbəb> - Tək-tək Tag Edəcəkdir.\n/etag <səbəb> - Emojilərlə Tag Edəcəkdir."
   await event.reply(helptext,
                     buttons=(
                       [Button.url('Məni Qrupa Sal ➕', 'https://t.me/ElxanTaggerBot?startgroup=a')],
@@ -134,7 +134,7 @@ async def cancel(event):
   anlik_calisan.remove(event.chat_id)
 
 
-@client.on(events.NewMessage(pattern="^/tag ?(.*)"))
+@client.on(events.NewMessage(pattern="^/all ?(.*)"))
 async def mentionall(event):
   global anlik_calisan
   if event.is_private:
