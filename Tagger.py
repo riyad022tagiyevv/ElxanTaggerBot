@@ -104,7 +104,7 @@ async def mentionall(event):
         await event.respond("**Tag uğurlu şəkildə dayandırıldı** ❌")
         return
       if usrnum == 5:
-        await client.send_message(event.chat_id, f"{usrtxt}\n\n{msg}")
+        await client.send_message(event.chat_id, f"{usrtxt}\n{msg}")
         await asyncio.sleep(2)
         usrnum = 0
         usrtxt = ""
@@ -119,7 +119,7 @@ async def mentionall(event):
       usrnum += 1
       usrtxt += f"[{random.choice(emoji)}](tg://user?id={usr.id}) "
       if event.chat_id not in anlik_calisan:
-        await event.respond("Tag uğurlu şəkildə dayandırıldı\n\n**Burada sizin reklamınız ola bilər @muellime**❌")
+        await event.respond("Tag uğurlu şəkildə dayandırıldı** ❌")
         return
       if usrnum == 5:
         await client.send_message(event.chat_id, usrtxt, reply_to=msg)
