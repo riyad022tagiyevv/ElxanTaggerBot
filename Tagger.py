@@ -27,32 +27,32 @@ async def start(event):
   await event.reply("Salam 👋\n\nMən sizin əvəzinizdən qruplarnızda istifadəçiləri tag edə bilərəm.\n\nHaqqımda daha ətraflı məlumat əldə etmək üçün /help əmrinə toxunun.",
                     buttons=(
                    
-		      [Button.url('Məni Qrupa Sal ➕', 'https://t.me/ElxanTaggerBot?startgroup=a')],
-                      [Button.url('Support 🛠', 'https://t.me/muellime')],
-                      [Button.url('Reklam Üçün 📣', 'https://t.me/muellime')],
-		      [Button.url('Developer 👨🏻‍💻', 'https://t.me/muellime')],
+		      [Button.url('Məni Qrupa Sal ➕', 'https://t.me/DTOTagBot?startgroup=a')],
+                      [Button.url('Support 🛠', 'https://t.me/DTOTeammm')],
+                      [Button.url('Reklam Üçün ', 'https://t.me/RiyaddBlogg')],
+		      [Button.url('Developer 👨🏻‍💻', 'https://t.me/Thagiyevv')],
                     ),
                     link_preview=False
                    )
 @client.on(events.NewMessage(pattern="^/help$"))
 async def help(event):
-  helptext = "**Elxan Tagger Bot'un Kömək Menyusu**\n\nƏmrlər:\n/all <səbəb> - 5-li Tag Edəcəkdir. \n/admins <səbəb> - Yalnız Adminləri Tag Edəcəkdir. \n/tektag <səbəb> - Tək-tək Tag Edəcəkdir.\n/etag <səbəb> - Emojilərlə Tag Edəcəkdir."
+  helptext = "**ᴅᴛö Tagger Bot'un Kömək Menyusu**\n\nƏmrlər:\n/all <səbəb> - 5-li Tag Edəcəkdir. \n/admins <səbəb> - Yalnız Adminləri Tag Edəcəkdir. \n/tektag <səbəb> - Tək-tək Tag Edəcəkdir.\n/etag <səbəb> - Emojilərlə Tag Edəcəkdir."
   await event.reply(helptext,
                     buttons=(
-                      [Button.url('Məni Qrupa Sal ➕', 'https://t.me/ElxanTaggerBot?startgroup=a')],
-                      [Button.url('Support 👨‍💻', 'https://t.me/muellime')],
-                      [Button.url('Reklam Üçün 💸', 'https://t.me/muellime')],
-		      [Button.url('Developer 🧑‍🔧', 'https://t.me/muellime')],
+                      [Button.url('Məni Qrupa Sal ➕', 'https://t.me/DTOTagBot?startgroup=a')],
+                      [Button.url('Support 👨‍💻', 'https://t.me/DTOteammm')],
+                      [Button.url('Reklam Üçün 💸', 'https://t.me/RiyaddBlogg')],
+		      [Button.url('Developer 🧑‍🔧', 'https://t.me/Thagiyevv')],
                     ),
                     link_preview=False
                    )
 	
 @client.on(events.NewMessage(pattern="^/reklam$"))
 async def help(event):
-  helptext = "**Çox funksiyalı tag botunu tapmağa çalışan qrup sahibləri @ElxanTaggerBot Sizin üçündür:\n\n📌 5-li Tag\n📌 Emojiylə Tag\n📌 Təkli Tag\n📌 Yalnız Adminləri Taglamaq\n\n Belə bir çox funksiyalı @ElxanTaggerBot-u admin olaraq qrupunuza əlavə edə və asanlıqla qoşula, userleri tag edə bilərsiniz. **"
+  helptext = "**Çox funksiyalı tag botunu tapmağa çalışan qrup sahibləri @DTOTagBot Sizin üçündür:\n\n📌 5-li Tag\n📌 Emojiylə Tag\n📌 Təkli Tag\n📌 Yalnız Adminləri Taglamaq\n\n Belə bir çox funksiyalı @ElxanTaggerBot-u admin olaraq qrupunuza əlavə edə və asanlıqla qoşula, userleri tag edə bilərsiniz. **"
   await event.reply(helptext,
                     buttons=(
-                      [Button.url('Məni Qrupa Sal ➕', 'https://t.me/ElxanTaggerBot?startgroup=a')],
+                      [Button.url('Məni Qrupa Sal ➕', 'https://t.me/DTOTagBot?startgroup=a')],
                     ),
                     link_preview=False
                    )
@@ -284,5 +284,5 @@ async def mentionall(tagadmin):
                 sleep(0.5)
 
 
-print(">> Bot işləyir narahat olma 🚀 məlumat almaq üçün @muellime yazın <<")
+print(">> Bot işləyir narahat olma 🚀 məlumat almaq üçün @Thagiyevv yazın <<")
 client.run_until_disconnected()
